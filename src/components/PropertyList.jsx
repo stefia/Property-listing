@@ -26,6 +26,7 @@ export default function PropertyList({selectedCountry, isSuperhost}) {
     
     return (
         <div className="property-list">
+            <div className="property-title">Over 200 stays</div>
         {filtered.map((property) => (
             <PropertyCard key={property.id} {...property} />
         ))}

@@ -104,7 +104,11 @@ body {
   background: #fff;
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
 }
-
+.property-title {
+  grid-column: 1 / -1;
+  font-size: 24px;
+  font-weight: 500;
+}
 .switch-input:checked + .switch-label .switch-track {
   left: calc(100% - 2px);
   transform: translateX(-100%);
@@ -121,7 +125,7 @@ body {
   justify-content: center;
   gap: 32px;
   max-width: 1135px;
-  margin: 120px auto auto auto;
+  margin: 120px auto;
 }
 .card {
   position: relative;
@@ -183,8 +187,15 @@ body {
   align-items: center;
 }
 .price {
-  font-size: 24px;
+  display: flex;
+  align-items: baseline;
   font-weight: 500;
+}
+.price-value {
+  font-size: 20px;
+}
+.price-night {
+  font-size: 16px;
 }
 .rating {
   display: flex;

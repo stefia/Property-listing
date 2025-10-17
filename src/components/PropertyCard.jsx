@@ -37,7 +37,10 @@ export default function PropertyCard({
             </div>
             <div className="separator-line"></div>
             <div className="footer">
-                <div className="price">${price}/night</div>
+                <div className="price">
+                    <div className="price-value">${price}</div>
+                    <div className="price-night">/night</div>
+                </div>
                 <div className="rating">
                     <img src={StarIcon} alt="Star" className='star-icon' />
                     {rating}
