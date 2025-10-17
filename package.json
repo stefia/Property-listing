@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && powershell -Command \"if (Test-Path ./docs) { Remove-Item -Recurse -Force ./docs }; mkdir docs; Copy-Item -Path ./dist/* -Destination ./docs -Recurse\" && git add -A && git commit -m \"build: auto deploy\" && git push origin main"
   },
   "dependencies": {
     "react": "^19.1.1",
