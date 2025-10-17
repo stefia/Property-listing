@@ -216,20 +216,31 @@ button {
   transition: border-color 0.25s;
 }
 
-@media (min-width:800px) and (max-width:1024px) {
+@media (min-width:800px) and (max-width:1200px) {
   .filterBar {
     width: 85%;
-  }
-}
-@media (max-width:799px) {
-  .filterBar {
-    width: 85%;
-  }
-  .filterBar-wrapper {
-    gap: 30px;
   }
   .property-list {
-    margin-top: 180px;
+    margin: 120px 25px;
   }
 }
 
+
+@media (max-width:800px) {
+  .filterBar {
+    width: 45%;
+    padding: 32px 100px;
+  }
+  .filterBar-wrapper {
+    gap: 30px;
+    justify-content: center;
+  }
+  .property-list {
+    margin: 250px 25px;
+  }
+  .countries {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
